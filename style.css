@@ -1,0 +1,73 @@
+/* Custom Styles for Bali Cahaya Wellness */
+
+@keyframes subtleBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: subtleBounce 4s ease-in-out infinite;
+}
+
+/* Glassmorphism & card hover touches */
+.menu-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 28px -6px rgba(107, 29, 56, 0.08),
+    0 8px 16px -4px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfbf7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c59b4e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b1d38;
+}
+
+/* Interactive Info Card Hover Animation */
+.interactive-info-card {
+  transition:
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.interactive-info-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 16px 30px -8px rgba(107, 29, 56, 0.12);
+}
+
+/* Gallery Card Hover Animation */
+.gallery-card {
+  transition:
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -10px rgba(107, 29, 56, 0.12);
+}
